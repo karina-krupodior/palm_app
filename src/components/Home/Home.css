@@ -1,0 +1,52 @@
+.content{
+    display: grid;
+    background: #4C3E31;
+    background-size: cover;
+    grid-template-columns:  50%  50%;
+    grid-column-gap: 20px;
+    text-decoration: none;
+    width: 1280px;
+
+}
+
+.content img {
+    width: 500px;
+    margin-top: 15px;
+
+
+}
+.menu_list_home{
+    margin-left: 30px;
+    list-style: none;
+    height: 375px;
+
+
+
+
+}
+.five_steps{
+    width: 540px;
+    height: 55px;
+    border:   solid 4px black;
+    border-radius: 50px;
+    background-color: #FD947E;
+
+}
+.menu_item_home:first-child {
+  text-align: center;
+    color: black;
+
+
+
+}
+.menu_item_home{
+    margin-top: 15px;
+    margin-left: 25px;
+    color:white;
+    font-size: 22px;
+}
+.image_home{
+    width: 50px;
+}
+
+

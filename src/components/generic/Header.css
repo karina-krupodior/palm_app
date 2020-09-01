@@ -1,0 +1,71 @@
+.header{
+    display: grid;
+    grid-area: h;
+    background: #4C3E31;
+    background-size: cover;
+    grid-template-columns: 224px 1fr;
+    grid-column-gap: 20px;
+}
+.header img {
+    width: 72px;
+
+}
+
+.content{
+    grid-area: c;
+    background: brown;
+
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu_list {
+    display: flex;
+    list-style: none;
+}
+.menu_item{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 20px;
+
+}
+
+.menu_link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+.menu_link:hover, .menu_link5:active, .menu_link:focus{
+    color:#FD947E;
+}
+.your_tour{
+    margin-top: -10px;
+    width: 110px;
+    height: 55px;
+    border:   solid 4px black;
+    border-radius: 50px;
+    background-color: #FD947E;
+    text-align: center;
+
+
+}
+
+.menu_link_tour {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 90px;
+    text-align: center;
+}
+
+

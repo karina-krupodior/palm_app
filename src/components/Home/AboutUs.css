@@ -1,0 +1,23 @@
+.aboutUs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #4C3E31;
+    grid-column-gap: 20px;
+    width: 1280px;
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+
+
+}
+.networkLogo  {
+   width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+.friends{
+    margin-top: 40px;
+}
+.nav{
+    margin-top: 40px;
+}
