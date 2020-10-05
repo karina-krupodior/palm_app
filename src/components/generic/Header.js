@@ -1,38 +1,56 @@
-import React,{ Component } from 'react';
+
+import React,{ Component, useState} from 'react';
 import './Header.css';
 
-class Header extends  Component {
-    render() {
+class Header extends  React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {isToggleOn: false};
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState(state => ({
+            isToggleOn: !state.isToggleOn
+        }));
+    }
+
+
+    render(){
         return (
-        <header className={'header'}>
+
+        <div className={'header'}>
             <div className={'header_logo'} >
-<img src={'palm_tree.png'} alt={''}/>
+             <img src={'1854_1535905236_goldpalm17.jpg'} alt={''}/>
+                </div>
 
-            </div>
+                <div className={`header_burger ${this.state.isToggleOn ? 'active' : ''}`} onClick={this.handleClick }>
+                  <span> </span>
 
+                    <nav className={`header_menu  ${this.state.isToggleOn ? 'active' : ''}`} onClick={this.handleClick}>
 
-            <nav className={'nav'}>
-                <ul className={'menu_list'}>
-                    <li className={'menu_item'}>
-                        <a className={'menu_link'} href={'#'}>HOME </a>
-                    </li>
-                    <li className={'menu_item'}>
-                        <a className={'menu_link'} href={'#'}>COUNTRIES</a>
-                    </li>
-                    <li className={'menu_item'}>
-                        <a className={'menu_link'} href={'#'}>CONTACTS </a>
-                    </li>
-                    <div className={'your_tour'}> <li className={'menu_item'}>
-                      <a className={'menu_link_tour'} href={'#'}>YOUR<br/>
-                      TOUR</a>
-                          </li></div>
+                        <ul className={'header_list'}>
+                            <li className={'menu_item'}>
+                                <a className={'header_link'} href={'/home'}>HOME </a>
+                            </li>
+                            <li className={'menu_item'}>
+                                <a className={'header_link'} href={'/countries'}>COUNTRIES</a>
+                            </li>
+                            <li className={'menu_item'}>
+                                <a className={'header_link'} href={'/contacts'}>CONTACTS </a>
+                            </li>
+                            <li className={'menu_item'}>
+                                <a className={'header_link'} href={'/tour'}>YOUR TOUR</a>  </li>
+                        {/*</div>*/}
 
+                        </ul>
 
-                </ul>
+                    </nav>
+        </div>
+ </div>
+        
 
-            </nav>
-
-        </header>
         )
     }
 }

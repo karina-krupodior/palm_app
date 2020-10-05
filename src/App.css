@@ -1,18 +1,13 @@
 .App {
-  display: grid;
-  margin: 0 auto;
-  padding: 0;
-  grid-template-rows: 1fr 2fr;
+  /*display: grid;*/
+  grid-template-rows: 1fr;
   grid-template-columns: 3fr;
-  width: 1280px ;
-  background: #4C3E31 ;
-  font-family: Chalkduster ;
-  grid-template-areas:
-  'h' 'h'
-  'c';
-  grid-gap: 10px;
-  overflow-wrap: break-spaces;
-  min-width: 320px;
-
-
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: #4C3E31;
+  font-family: Chalkduster;
+  /*grid-gap: 10px;*/
 }
+

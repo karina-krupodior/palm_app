@@ -2,22 +2,73 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #4C3E31;
-    grid-column-gap: 20px;
-    width: 1280px;
+    /*grid-column-gap: 20px;*/
+    /*width: 1280px;*/
+    width: 100%;
     color: white;
-    margin-top: 60px;
+    margin-top: 3%;
     text-align: center;
-
-
 }
+
 .networkLogo  {
-   width: 60px;
-    height: 60px;
+   width: 45px;
     margin-left: 10px;
 }
 .friends{
-    margin-top: 40px;
+    margin-top: 10%;
 }
-.nav{
-    margin-top: 40px;
+.footer_menu{
+    display: flex;
+    justify-content: flex-start;
+    /*margin-left: 70px;*/
+    flex-wrap: wrap;
+    list-style: none;
 }
+.footer_list{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+}
+.footer_item{
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 30px;
+}
+.footer_link{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+@media (max-width:767px) {
+    .aboutUs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+    }
+    .news{
+        visibility: hidden;
+        display: none;
+    }
+    .footer_menu{
+        visibility: hidden;
+        display: none;
+
+    }
+}
+@media (max-width:455px) {
+    .aboutUs {
+        display: contents;
+
+    }
+
+}
+
+

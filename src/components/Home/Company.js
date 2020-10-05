@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import './Company.css'
-import AboutUs from "./AboutUs";
+
+
+
 
 
 
@@ -13,19 +15,19 @@ class Company extends Component {
                 <div className="img-item">
                     <p> EXCLUSIVELY</p>
                     <img src='icons8-пляж-100.png'/>
-                        <span>Tired of ‘hot’ tours ?<br/>
-                            Do it yourself your trip how you want!!!</span>
+                        <p>Tired of ‘hot’ tours ? <br/>
+                            Do it yourself your trip how you want!!!</p>
                 </div>
 
                 <div className="img-item">
                     <p> AVAILABLE</p>
                     <img src="icons8-деньги-200.png"/>
-                        <span>Enough to overpay travel agencies for tours select countries based on your budget</span>
+                        <p>Enough to overpay travel agencies for tours select countries based on your budget</p>
                 </div>
                 <div className="img-item">
                     <p> FAST</p>
                     <img src="icons8-взлет-самолета-100.png"/>
-                        <span>Our experts provide the best travel options quickly and efficiently</span>
+                        <p>Our experts provide the best travel options quickly and efficiently</p>
                 </div>
 
                 </div>

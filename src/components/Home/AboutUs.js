@@ -10,8 +10,8 @@ class AboutUs extends Component {
                 <div className={'news'}>
                     <p>NEWS</p>
 
-                <p>Bus tours to Europe </p>
-               <p>  You have been dreaming about a trip </p> <p>to Europe for a long time, but you don't know ...</p>
+                Bus tours to Europe
+               <p>  You have been dreaming about a trip to Europe for a long time, but you don't know ...</p>
 
                 <p>People who travel abroad often know that the best thing ...</p>
 
@@ -32,29 +32,29 @@ class AboutUs extends Component {
                        <p>call me back</p>
                         Book a tour </div>
 
-                <nav className={'nav'}>
-                    <ul className={'menu_list'}>
-                        <li className={'menu_item'}>
-                            <a className={'menu_link'} href={'#'}>HOME </a>
+                <nav className={'footer_menu '}>
+                    <ul className={'footer_list'}>
+                        <li className={'footer_item'}>
+                            <a className={'footer_link'} href={'#'}>HOME </a>
                         </li>
-                        <li className={'menu_item'}>
-                            <a className={'menu_link'} href={'#'}>COUNTRIES</a>
+                        <li className={'footer_item'}>
+                            <a className={'footer_link'} href={'#'}>COUNTRIES</a>
                         </li>
-                        <li className={'menu_item'}>
-                            <a className={'menu_link'} href={'#'}>CONTACTS </a>
+                        <li className={'footer_item'}>
+                            <a className={'footer_link'} href={'#'}>CONTACTS </a>
                         </li>
-                        <div className={'yourTour'}> <li className={'menu_item'}>
-                            <a className={'menu_link'} href={'#'}>YOUR TOUR</a>
-                        </li></div>
+                        <li className={'footer_item'}>
+                            <a className={'footer_link'} href={'#'}>YOUR TOUR</a>
+                        </li>
 
 
                     </ul>
 
                 </nav>
                 <div className={'friends'} > <p>LET'S BE FRIENDS</p>
-                <img  className={'networkLogo'} src ='social-03-512 (1).webp'/>
-                    <img  className={'networkLogo'} src ='Facebook-512.png'/>
-                    <img  className={'networkLogo'} src ='Telegram-256.png'/>
+                <img  className={'networkLogo'} src ={'social-03-512 (1).webp'}/>
+                    <img className={'networkLogo'} src ={'Facebook-512.png'}/>
+                    <img className={'networkLogo'} src ={'Telegram-256.png'}/>
             </div>
 
                 </div>
