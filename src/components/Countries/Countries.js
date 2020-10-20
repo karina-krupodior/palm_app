@@ -6,8 +6,8 @@ import  './Countries.css';
 const Countries = (props) => {
 
     const countries = [
-        { name: 'Austria', cities : ['Vienna',' ' ,'Graz',' ','Linz',' ','Salzburg'] ,image:<img src={'austria.png'} alt={''}/>},
-    { name: 'Albania', cities: ['Tirana', 'Durrës','Vlorë','Elbasan'],image:<img src={'albania.jpg'} alt={''}/>} ,
+        { name: 'Austria', cities : ['Vienna','Graz','Linz','Salzburg'] ,image:<img src={'austria.png'} alt={''}/>},
+        { name: 'Albania', cities: ['Tirana', 'Durrës','Vlorë','Elbasan'],image:<img src={'albania.jpg'} alt={''}/>} ,
         { name: 'Belgium', cities: ['Aalst ', 'Aarschot ','Beringen','Genk'] ,image:<img src={'Belgium.png'} alt={''}/>} ,
         { name: 'Bulgaria', cities: ['Sofia ', 'Plovdiv ','Varna','Burgas'] ,image:<img src={'bulgaria-256.png'} alt={''}/>} ,
         { name: 'United Kingdom', cities: ['London ', 'Liverpool ','Manchester','Oxford'],image:<img src={'United Kingdom .png'} alt={''}/>} ,
@@ -39,8 +39,7 @@ const Countries = (props) => {
     return (
         <Fragment>
             {countries.map( (c,i) => {
-
-               return <div className={'box'}   >
+               return <div className={'box'} key={i}>
                    <GenericCountry key={i} cities={c.cities} text={c.name} image={c.image}  />
                </div>
             } )}

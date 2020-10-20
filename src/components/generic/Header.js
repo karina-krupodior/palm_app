@@ -2,22 +2,29 @@
 import React,{ Component, useState} from 'react';
 import './Header.css';
 
+import {Link} from 'react-router-dom';
+
 class Header extends  React.Component {
 
     constructor(props) {
         super(props);
         this.state = {isToggleOn: false};
         this.handleClick = this.handleClick.bind(this);
+
+
     }
 
     handleClick() {
         this.setState(state => ({
             isToggleOn: !state.isToggleOn
         }));
+
     }
 
 
-    render(){
+
+    render() {
+
         return (
 
         <div className={'header'}>
@@ -41,8 +48,8 @@ class Header extends  React.Component {
                                 <a className={'header_link'} href={'/contacts'}>CONTACTS </a>
                             </li>
                             <li className={'menu_item'}>
-                                <a className={'header_link'} href={'/tour'}>YOUR TOUR</a>  </li>
-                        {/*</div>*/}
+                                <a className={'header_link'} href={'/tour'}>YOUR TOUR </a>  </li>
+
 
                         </ul>
 
@@ -53,6 +60,8 @@ class Header extends  React.Component {
 
         )
     }
+
 }
 
-export default Header;
+
+export default Header
