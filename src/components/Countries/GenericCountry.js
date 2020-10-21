@@ -3,6 +3,8 @@ import React, { Component, Fragment } from "react";
 import Popup from "reactjs-popup";
 import './Countries.css'
 import Checkbox from "./Checkbox";
+import {connect} from "react-redux";
+
 
 
 
@@ -80,12 +82,14 @@ class GenericCountry extends Component {
 
                                             <div>
                                                 <h1 className="popup_title"> CHOOSE CITIES WHAT YOU WANT TO VISIT</h1>
-                                                <input type="checkbox" onClick={this.handleAllChecked} value="checkedall" /> Select all cities / Clear all
+                                                {/*<input type="checkbox" onClick={this.handleAllChecked} value="checkedall" /> Select all cities / Clear all*/}
                                               <ul>
-                                                    {this.state.countries.map((countries   ) => {
-                                                            return (<Checkbox handleCheckChieldElement={this.handleCheckChieldElement}  {...countries } />)
+                                                    {this.props.cities.map((city   ) => {
+                                                            return (<Checkbox handleCheckChieldElement={this.handleCheckChieldElement}  cities = { city } />
+                                                            )
                                                         })
                                                     }
+                                                    <div> <button > ADD TO TOUR</button> </div>
                                                 </ul>
                                             </div>
                                         </div>
