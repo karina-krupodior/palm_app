@@ -1,16 +1,17 @@
-import {ADD_TO_BASKET} from "../actionConstants";
+import {ADD_TO_BASKET} from "../actions/types";
 
 const initialState = {
     cities: []
 };
 
-
-const basketReducer = (state= initialState,{ type, payload }) => {
+export default function (state= initialState,{ type, payload }) {
+    // {console.log(basketReducer,'basketReducer')}
+    console.log(state,'state from reducer')
     switch (type) {
 
         case ADD_TO_BASKET:
-            console.log(payload,'action payload reducer ')
-            console.log(state,'state reducer ')
+
+            console.log(payload,' payload')
             state.cities.push(payload);
             const tempCities = [...state.cities]
             return {
@@ -22,4 +23,13 @@ const basketReducer = (state= initialState,{ type, payload }) => {
             return state
     }
 }
-export default basketReducer;
+function solution(string) {
+
+    for ( let i = 0; i < string.lenght; i++) {
+        if(string[i] === string[i].toUpperCase()){
+            // insert space letter in array on previous index
+            return  string.split('').splice(string[i],0,' ').join('')
+        }
+    }
+}
+console.log(solution('camelCasing'))

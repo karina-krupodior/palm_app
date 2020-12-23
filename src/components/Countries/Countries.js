@@ -3,14 +3,14 @@ import React,{Fragment} from "react";
 import GenericCountry from "./GenericCountry";
 import  './Countries.css';
 
-const Countries = (props) => {
+const Countries = () => {
 
     const countries = [
-        { name: 'Austria', cities : ['Vienna',' ' ,'Graz',' ','Linz',' ','Salzburg'] ,image:<img src={'austria.png'} alt={''}/>},
-    { name: 'Albania', cities: ['Tirana', 'Durrës','Vlorë','Elbasan'],image:<img src={'albania.jpg'} alt={''}/>} ,
+        { name: 'Austria', cities : ['Vienna','Graz','Linz','Salzburg'] ,image:<img src={'austria.png'} alt={''}/>},
+        { name: 'Albania', cities: ['Tirana', 'Durrës','Vlorë','Elbasan'],image:<img src={'albania.jpg'} alt={''}/>} ,
         { name: 'Belgium', cities: ['Aalst ', 'Aarschot ','Beringen','Genk'] ,image:<img src={'Belgium.png'} alt={''}/>} ,
         { name: 'Bulgaria', cities: ['Sofia ', 'Plovdiv ','Varna','Burgas'] ,image:<img src={'bulgaria-256.png'} alt={''}/>} ,
-        { name: 'United Kingdom', cities: ['London ', 'Liverpool ','Manchester','Oxford'],image:<img src={'United Kingdom .png'} alt={''}/>} ,
+        { name: 'United Kingdom',cities: ['London ', 'Liverpool ','Manchester','Oxford'],image:<img src={'United Kingdom .png'} alt={''}/>} ,
         { name: 'Hungary', cities: ['Budapest', 'Debrecen ','Szeged','Miskolc'] ,image:<img src={'Hungary.png'} alt={''}/>} ,
         { name: 'Germany', cities: ['Berlin', 'Hamburg','Stuttgart','Cologne '],image:<img src={'germany.png'} alt={''}/>} ,
         { name: 'Greece', cities: ['Athens', 'Thessaloniki','Patras','Volos'] ,image:<img src={'GREECE.png'} alt={''}/>} ,
@@ -33,7 +33,7 @@ const Countries = (props) => {
         { name: 'Montenegro', cities: ['Sofia ', 'Plovdiv ','Varna','Burgas'],image:<img src={'MONTENEGRO.png'} alt={''}/>} ,
         { name: 'Czech Republic', cities: ['Sofia ', 'Plovdiv ','Varna','Burgas'] ,image:<img src={'Czech Republic.png'} alt={''}/>} ,
         { name: 'Switzerland', cities: ['Sofia ', 'Plovdiv ','Varna','Burgas'],image:<img src={'SWITZERLAND.png'} alt={''}/>} ,
-        { name: 'Sweden', cities: ['Sofia ', 'Plovdiv ','Varna','Burgas'] ,image:<img src={'sweden-circular.png'} alt={''}/>} ,
+        { name: 'Sweden', cities: ['Sofia', 'Plovdiv','Varna','Burgas'] ,image:<img src={'sweden-circular.png'} alt={''}/>} ,
 
     ]
     return (
@@ -41,7 +41,7 @@ const Countries = (props) => {
             {countries.map( (c,i) => {
 
                return <div className={'box'}   >
-                   <GenericCountry key={i} cities={c.cities} text={c.name} image={c.image}  />
+                   <GenericCountry key={i} cities={c.cities} text={c.name} image={c.image}/>
                </div>
             } )}
 
