@@ -4,7 +4,8 @@ import Popup from "reactjs-popup";
 import './Countries.css'
 import Checkbox from "./Checkbox";
 import {connect} from "react-redux";
-import {addToBasket} from "../redux/actions/addAction";
+import { addCities } from "../redux/actions";
+import { bindActionCreators } from 'redux'
 
 
 
@@ -19,9 +20,13 @@ class  GenericCountry extends Component {
 
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log(this.props.citiesTest, 'this from redux store')
+
+    }
+
 
     render() {
-
 
         return (
                 <Fragment>
@@ -46,10 +51,11 @@ class  GenericCountry extends Component {
                                                                 <Checkbox value={city} cities = {city} onClick={this.onCheckboxClick} />)
                                                         })}
 
-                                                        <button onClick={() => this.onAddCitiesButton()}>ADD TO TOUR</button>
+                                                        <button onClick={() => this.props.addToBasket(this.state.checkCities)}>ADD TO TOUR</button>
 
 
                                                     </ul>
+                                                    {console.log(this.props.citiesTest)}
                                                 </div>
                                             </div>
                                         </div>
@@ -91,25 +97,29 @@ class  GenericCountry extends Component {
         console.log(setTimeout(() => console.log(this.state.checkCities), 3000))
     }
 
-    onAddCitiesButton = () => {
-        console.log('on add cities button')
-        addToBasket('test');
-
-    }
+    // onAddCitiesButton = () => {
+    //     console.log('on add cities button')
+    //     addToBasket('test');
+    //
+    // }
 
 }
 
-//
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         onAddedCity : (city) => {
-//
-//             return dispatch({type : ADD_TO_BASKET, payload : city})
-//         }
-//     }
-// }
+const mapDispatchToProps = dispatch => ({
+    addToBasket: (cities) => {
+        console.log(cities);
+        return dispatch(addCities(cities))
+    }
+})
 
-export default connect(null,{addToBasket}) (GenericCountry);
+const mapStateToProps = state => ({
+    citiesTest: state.cities
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(GenericCountry)
 
 
 

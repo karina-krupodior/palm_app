@@ -1,42 +1,29 @@
-import React, {Fragment} from "react";
-import {ADD_TO_BASKET} from "../redux/actions/types";
-import GenericCountry from "../Countries/GenericCountry";
+import React, {Component, Fragment} from "react";
 import {connect} from  'react-redux'
 
 
 
-function YourTour (props){
-    console.log(props,'propsYourTour')
+class YourTour extends Component {
+
+
+    render () {
+        console.log(this.props)
+
     return (
-        <Fragment>
-    <p>{props.cities.map(el => el)}</p>
-            {console.log(props.cities.map(el => el),'(props.cities.map(el => el)')}
-        </Fragment>
-)}
-
-
-
-
- const mapStateToProps = state => {
-    console.log(state,mapStateToProps,'mapStateToPropsYourTour','state')
-    return {
-        cities: state.basketReducer.cities
-        // cities: state.basketReducer.cities
-
+        <div>
+    <h1>12345</h1>
+</div>
+    )
     }
+}
 
 
- }
+const mapStateToProps = state => ({
+    cities: state.cities
+})
 
 
-
-const mapDispatchToProps = dispatch => {
-    return {
-      onAddedCity : (city) => {
-            console.log(city,'onAddedCity,city,YourTour')
-            return dispatch({type : ADD_TO_BASKET, payload : city})
-        }
-    }
- }
-
-export default connect(mapStateToProps,mapDispatchToProps)(YourTour);
+export default connect(
+    mapStateToProps,
+    null
+)(YourTour);

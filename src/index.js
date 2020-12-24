@@ -3,14 +3,11 @@ import ReactDOM from  'react-dom';
 
 import { Provider } from 'react-redux';
 import App from './App';
-import store from "./components/redux/store";
+import { createStore} from "redux";
+import rootReducer from "./components/redux/reducer"
 
 
-// const initialState = {};
-//
-// const store = createStore(
-//     rootReducer
-// );
+const store = createStore(rootReducer);
 
 
 ReactDOM.render(
