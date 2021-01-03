@@ -1,6 +1,7 @@
 
 import React,{ Component, useState} from 'react';
 import './Header.css';
+import {Link} from "react-router-dom";
 
 class Header extends  React.Component {
 
@@ -32,17 +33,20 @@ class Header extends  React.Component {
 
                         <ul className={'header_list'}>
                             <li className={'menu_item'}>
-                                <a className={'header_link'} href={'/home'}>HOME </a>
+                              <Link className={'header_link'} to={'/home'}>HOME</Link>
+                            </li>
+
+
+                            <li className={'menu_item'}>
+
+                                <Link className={'header_link'} to={'/countries'}>COUNTRIES</Link>
                             </li>
                             <li className={'menu_item'}>
-                                <a className={'header_link'} href={'/countries'}>COUNTRIES</a>
+                                <Link  className={'header_link'} to={'/contacts'}>CONTACTS </Link>
                             </li>
                             <li className={'menu_item'}>
-                                <a className={'header_link'} href={'/contacts'}>CONTACTS </a>
-                            </li>
-                            <li className={'menu_item'}>
-                                <a className={'header_link'} href={'/tour'}>YOUR TOUR</a>  </li>
-                        {/*</div>*/}
+                                <Link className={'header_link'} to={'/tour'}>YOUR TOUR</Link> </li>
+
 
                         </ul>
 

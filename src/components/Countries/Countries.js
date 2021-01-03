@@ -1,7 +1,7 @@
 
 import React,{Fragment} from "react";
 import GenericCountry from "./GenericCountry";
-import  './Countries.css';
+import  './GenericCountry.css';
 
 const Countries = () => {
 

@@ -1,13 +1,14 @@
 const initialState = {
-    cities : []
+    cities: [],
 }
 
 
-export default (state = initialState, action) =>{
+export default (state = null, action) => {
     switch (action.type) {
         case 'ADD_CITY' :
             console.log('in reducer');
             console.log(action);
+            console.log(state, 'state')
             return {
                 ...state,
                 cities: [...state.cities, ...action.payload]

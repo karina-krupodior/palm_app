@@ -7,7 +7,7 @@ import { createStore} from "redux";
 import rootReducer from "./components/redux/reducer"
 
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, { cities: { cities : [] }  });
 
 
 ReactDOM.render(

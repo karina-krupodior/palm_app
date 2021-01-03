@@ -1,19 +1,9 @@
 
-.App {
-    /*display: grid;*/
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr;
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    background: #4C3E31;
-    font-family: Chalkduster ;}
-
 .content{
     display: grid;
     margin-top: 5%;
     /*background: #4C3E31;*/
+    color: black;
     grid-template-columns:  1fr 1fr;
     text-decoration: none;
     width: 100%;
@@ -50,7 +40,7 @@
 .menu_item_home{
     margin-top: 15px;
     /*margin-left: 25px;*/
-    color:white;
+    color: black;
     font-size: 22px;
 }
 
@@ -89,25 +79,5 @@
 
 
 
-
-/*    .menu_item_home:first-child {*/
-/*        font-size: 16px;*/
-/*        text-align: center;*/
-/*        color: black;*/
-/*    }*/
-
-/*
-/*    .menu_item_home p {*/
-/*        word-wrap: normal;*/
-/*        overflow-wrap: normal;*/
-/*    }*/
-/*    .image_home{*/
-/*        width: 50px;*/
-/*        margin-top: 140px;*/
-/*    }*/
-
-
-
-/*}*/
 
 
