@@ -1,17 +1,13 @@
 import React from 'react';
-import ReactDOM from  'react-dom';
-
-import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
 import App from './App';
-import { createStore} from "redux";
-import rootReducer from "./components/redux/reducer"
+import {createStore} from "redux";
+import rootReducer from "./redux/reducer";
 
-
-const store = createStore(rootReducer, { cities: { cities : [] }  });
-
-
+const store = createStore(rootReducer, {cities: {cities: []}});
 ReactDOM.render(
-    <Provider store={store} >
+    <Provider store={store}>
         <App/>
     </Provider>,
     document.getElementById('root')

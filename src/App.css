@@ -1,13 +1,11 @@
 .App {
-  /*display: grid;*/
   grid-template-rows: 1fr;
   grid-template-columns: 3fr;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  background: #5FB3DF;
-  font-family: Chalkduster;
-  /*grid-gap: 10px;*/
+  background: #5fb3df;
+  font-family: Georgia;
 }
 

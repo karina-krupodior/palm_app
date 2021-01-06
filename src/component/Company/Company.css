@@ -1,0 +1,54 @@
+.company {
+    display: grid;
+    color: black;
+    width: 100%;
+}
+
+.medium_text{
+    margin-top: -3px;
+}
+
+.wrap_head {
+    font-family: Chalkduster;
+    margin-top: 3%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-column: 1/5;
+    width: 45%;
+    border: solid 4px black;
+    border-radius: 50px;
+    background-color: #FD947E;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head {
+    text-align: center;
+    color: black;
+    font-size: 120%;
+}
+
+.img-item img {
+    width: 70%;
+}
+
+.img-item {
+    margin-top: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .company {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .img-item img {
+        width: 115px;
+        height: 115px;
+    }
+
+}
