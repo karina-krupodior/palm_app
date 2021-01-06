@@ -9,7 +9,6 @@ class YourTour extends Component {
             <div className={'wrapper_your_tour'}>
             <div className={'scroll'}>
                 <div className={'heading_your_tour'}>YOUR SELECTED TOUR</div>
-
                 {this.props.cities.map(el => {
                     return <h1> {el}</h1>
                 })}
