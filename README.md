@@ -41,7 +41,7 @@ export default combineReducers({
     cities
 });
 ```
-\\ YourTour
+// YourTour
 
 ```import React, {Component} from "react";
    import {connect} from 'react-redux'
