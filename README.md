@@ -1,5 +1,5 @@
                              
- #Tourism website 'Gold Palm'
+ # Tourism website 'Gold Palm'
 Hi there. Welcome to my project - tourism website 'Gold Palm'.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -19,7 +19,7 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-###Technologies in the project
+### Technologies in the project
 Page markup was done  using the HTML   
 Page styling was done using the CSS   
 Application was written in the language JS   
