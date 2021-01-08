@@ -1,6 +1,7 @@
 import React, {Component, useState} from 'react';
 import './Header.css';
 import {Link} from "react-router-dom";
+import Logo from '../../images/gold_palm_logo.jpg'
 
 class Header extends React.Component {
 
@@ -20,7 +21,7 @@ class Header extends React.Component {
         return (
             <div className={'header'}>
                 <div className={'header_logo'}>
-                    <img src={'1854_1535905236_goldpalm17.jpg'} alt={''}/>
+                    <img src={Logo} alt={''}/>
                 </div>
                 <div className={`header_burger ${this.state.isToggleOn ? 'active' : ''}`} onClick={this.handleClick}>
                     <span> </span>

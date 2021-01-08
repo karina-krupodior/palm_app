@@ -5,7 +5,7 @@ import '../Contacts/Contacts.css';
 export class Maps extends React.Component {
     render() {
         const mapStyles = {
-            width: "99%",
+            width: "90%",
             height: '80vh'
         };
         return (

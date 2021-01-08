@@ -2,6 +2,7 @@ import React, {Component, Fragment} from "react";
 import './Home.css';
 import Company from "../Company/Company";
 import AboutUs from "../AboutUs/AboutUs";
+import Main from '../../images/image_home.jpg'
 
 
 class Home extends Component {
@@ -24,7 +25,7 @@ class Home extends Component {
                         <li className={'menu_item_home'}><p>5.ENJOY YOUR TRIP</p></li>
                     </ul>
                     <div>
-                        <img className={'image_home'} src={'bg_1.jpg'} alt=""/>
+                        <img className={'image_home'} src={Main} alt=""/>
                     </div>
                 </div>
                 <Company/>

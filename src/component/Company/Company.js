@@ -1,6 +1,8 @@
 import React, {Component} from "react";
-import './Company.css'
-
+import './Company.css';
+import money from '../../images/money.png'
+import beach  from '../../images/beach.png'
+import plane from '../../images/plane.png'
 class Company extends Component {
     render() {
         return (
@@ -8,14 +10,14 @@ class Company extends Component {
                 <div className={'wrap_head'}><h1 className={'head'}> WHY OUR COMPANY ?</h1></div>
                 <div className="img-item">
                     <p> EXCLUSIVELY</p>
-                    <img src='icons8-пляж-100.png'/>
+                    <img src={beach}/>
                     <p>Tired of ‘hot’ tours ? <br/>
                         Do it yourself your trip <br/>
                         how you want!!!</p>
                 </div>
                 <div className="img-item">
                     <p> AVAILABLE</p>
-                    <img src="icons8-деньги-200.png"/>
+                    <img src={money}/>
                     <p className={'medium_text'}>Enough to overpay<br/>
                     travel agencies for tours <br/>
                         select countries based <br/>
@@ -23,7 +25,7 @@ class Company extends Component {
                 </div>
                 <div className="img-item">
                     <p> FAST</p>
-                    <img src="icons8-взлет-самолета-100.png"/>
+                    <img src={plane}/>
                     <p>Our experts provide <br/>
                     the best travel  options <br/>
                      quickly and efficiently</p>
