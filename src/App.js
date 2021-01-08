@@ -19,7 +19,7 @@ class App extends Component {
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
           </MetaTags>
           <Header/>
-          <Route exact path={'/'} component={Home}/>
+          <Route exact path={'/home'} component={Home}/>
           <Route exact path={'/countries'} component={Countries}/>
           <Route exact path={'/contacts'} component={Contacts}/>
           <Route exact path={'/tour'} component={YouTour}/>

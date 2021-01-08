@@ -28,7 +28,7 @@ class Header extends React.Component {
                     <nav className={`header_menu  ${this.state.isToggleOn ? 'active' : ''}`} onClick={this.handleClick}>
                         <ul className={'header_list'}>
                             <li className={'menu_item'}>
-                                <Link className={'header_link'} to={'/'}>HOME</Link>
+                                <Link className={'header_link'} to={'/home'}>HOME</Link>
                             </li>
                             <li className={'menu_item'}>
                                 <Link className={'header_link'} onClick={this.handleOnClick} to={'/countries'}>COUNTRIES</Link>
