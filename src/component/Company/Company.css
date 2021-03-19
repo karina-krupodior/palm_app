@@ -1,3 +1,4 @@
+
 .company {
     display: grid;
     color: black;
@@ -9,12 +10,11 @@
 }
 
 .wrap_head {
-    font-family: Chalkduster;
     margin-top: 3%;
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-column: 1/5;
+    grid-column: 1/4;
     width: 45%;
     border: solid 4px black;
     border-radius: 50px;
@@ -22,6 +22,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .head {
     text-align: center;

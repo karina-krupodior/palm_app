@@ -4,18 +4,14 @@ import '../Contacts/Contacts.css';
 
 export class Maps extends React.Component {
     render() {
-        const mapStyles = {
-            width: "90%",
-            height: '80vh'
-        };
         return (
-            <Map className={'maps'}
-                 google={this.props.google}
-                 zoom={15}
-                 style={mapStyles}
-                 initialCenter={{lat: 49.9838569, lng: 36.2599784}}>
-                <Marker position={{lat: 49.98576946, lng: 36.24965083}}/>
-            </Map>
+
+                <Map className={'maps'}
+                     google={this.props.google}
+                     zoom={15}
+                     initialCenter={{lat: 49.9838569, lng: 36.2599784}}>
+                    <Marker position={{lat: 49.98576946, lng: 36.24965083}}/>
+                </Map>
         );
     }
 }

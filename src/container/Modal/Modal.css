@@ -45,7 +45,7 @@
 .toggle-button {
     position: relative;
     border-radius: 10px;
-    left: 40%;
+    left: 8%;
     top: 20px;
     transition: .5s;
     cursor: pointer;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 .App {
   grid-template-rows: 1fr;
   grid-template-columns: 3fr;
@@ -5,7 +7,10 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  background: #FFFFFF;
-  font-family: Georgia;
+  background: #74B1DB;
+  font-family: 'Syne Mono', monospace;
+
+
+
 }
 

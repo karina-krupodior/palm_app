@@ -13,6 +13,7 @@ const Contacts = () => {
                     <h1 className={'page_title'}>TRAVEL AGENCIES CONTACTS</h1>
                     <img className={'images_icons'} src={phone} alt={''}/> Telephones:
                     <p>+38 (097) 685-46-96 viber</p>
+
                     <p>+38 (066) 195-48-58 viber</p>
                     <p>+38 (063) 828-93-61 </p>
                     <p>+38 (057) 732-00-92</p></div>

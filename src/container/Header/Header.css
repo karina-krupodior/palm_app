@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Libre+Baskerville&family=Luckiest+Guy&family=Permanent+Marker&family=Redressed&display=swap');
 .header {
     display: grid;
     background: #56BCC2;
@@ -7,7 +8,8 @@
     top: 0;
     left: 0;
     z-index: 50;
-    font-family: Chalkduster;
+    font-family: 'Fredoka One', cursive;
+
 }
 
 .header_body {
@@ -27,8 +29,49 @@
     max-width: 100%;
     width: 55%;
     display: block;
+    margin: 5px;
 }
 
+.header_menu {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.header_list {
+    display: flex;
+    list-style: none;
+    margin-top: 35px;
+    margin-left: 30%;
+}
+
+.menu_item {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.header_link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+@media (max-width: 1037px) {
+    .header_list {
+        display: flex;
+        list-style: none;
+        margin-top: 35px;
+        margin-left: 0;
+    }
+}
 @media (max-width: 850px) {
     .header img {
         display: block;
@@ -52,48 +95,16 @@
     }
 }
 
-.header_menu {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.header_list {
-    display: flex;
-    list-style: none;
-    margin-top: 30px;
-}
-
-.menu_item {
-    margin-top: 5px;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-left: 30px;
-}
-
-.header_link {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    transition-property: color;
-    transition-duration: 500ms;
-}
-
-
 @media (max-width: 767px) {
-
-
     .header_burger {
-        display: block;
         position: relative;
-        left: 90%;
-        width: 30px;
-        height: 20px;
-        top: 27px;
+        display: block;
+        width: 47px;
+        height: 28px;
+        border-top: 0px solid #fff;
+        border-bottom: 2px solid #fff;
+        left :425%;
+        top: -53px;
     }
 
     .header_menu.active {

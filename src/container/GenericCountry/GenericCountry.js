@@ -46,12 +46,14 @@ class GenericCountry extends Component {
                                                 <Checkbox value={city} cities={city} onClick={this.onCheckboxClick}/>)
                                         })}
                                     </ul>
-                                    <button className={'button_add_to_tour'}
-                                            onClick={() => this.props.addToBasket(this.state.checkCities)}>ADD TO TOUR
-                                    </button>
                                     <button className="toggle-button" onClick={this.onClose}>
                                         CLOSE
                                     </button>
+
+                                    <button className={'button_add_to_tour'}
+                                            onClick={() => this.props.addToBasket(this.state.checkCities)}>ADD TO TOUR
+                                    </button>
+
                                 </div>
                             </Modal>
                         </li>

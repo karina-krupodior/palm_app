@@ -22,9 +22,8 @@ class Header extends React.Component {
             <div className={'header'}>
                 <div className={'header_logo'}>
                     <img src={Logo} alt={''}/>
+                    <span className={`header_burger ${this.state.isToggleOn ? 'active' : ''}`} onClick={this.handleClick}> </span>
                 </div>
-                <div className={`header_burger ${this.state.isToggleOn ? 'active' : ''}`} onClick={this.handleClick}>
-                    <span> </span>
                     <nav className={`header_menu  ${this.state.isToggleOn ? 'active' : ''}`} onClick={this.handleClick}>
                         <ul className={'header_list'}>
                             <li className={'menu_item'}>
@@ -41,7 +40,6 @@ class Header extends React.Component {
                         </ul>
                     </nav>
                 </div>
-            </div>
         )
     }
 }

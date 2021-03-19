@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Libre+Baskerville&family=Luckiest+Guy&family=Permanent+Marker&family=Redressed&display=swap');
 .aboutUs {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,7 +22,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
-    font-family: Chalkduster;
+    font-family: 'Fredoka One', cursive;
 }
 
 .footer_list {
