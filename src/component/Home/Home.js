@@ -3,11 +3,13 @@ import './Home.css';
 import Company from "../Company/Company";
 import AboutUs from "../AboutUs/AboutUs";
 import Main from '../../images/image_home.jpg'
+import Header from "../../container/Header/Header";
 
 
 class Home extends Component {
     render() {
         return (
+
             <Fragment>
                 <div className={'content'}>
                     <ul className={'menu_list_home'}>

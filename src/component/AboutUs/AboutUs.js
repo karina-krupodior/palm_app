@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './AboutUs.css'
 import Networks from "../Networks/Networks";
 import {Link} from "react-router-dom";
+import Header from "../../container/Header/Header";
 
 class AboutUs extends Component {
     render() {
