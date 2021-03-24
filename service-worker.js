@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/palm_app/precache-manifest.90fefa54907878714ff6583fdc25342e.js"
+  "/palm_app/precache-manifest.733ab923dfaf3d909663db0948ada4a0.js"
 );
 
 self.addEventListener('message', (event) => {
