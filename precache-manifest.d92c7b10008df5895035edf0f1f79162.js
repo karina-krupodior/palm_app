@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b7a0edf134f466e60eb62707fe75261",
+    "revision": "2f3540785a33bbc67d182130e84f618e",
     "url": "/palm_app/index.html"
   },
   {
-    "revision": "eef88d8fe2762621f856",
+    "revision": "8250d408ce9bc1559222",
     "url": "/palm_app/static/css/main.c3039054.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/palm_app/static/js/2.5b18a141.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eef88d8fe2762621f856",
-    "url": "/palm_app/static/js/main.0b989ea7.chunk.js"
+    "revision": "8250d408ce9bc1559222",
+    "url": "/palm_app/static/js/main.64c64c84.chunk.js"
   },
   {
     "revision": "7d6eb220c159f947e741",

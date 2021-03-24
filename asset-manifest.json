@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/palm_app/static/css/main.c3039054.chunk.css",
-    "main.js": "/palm_app/static/js/main.0b989ea7.chunk.js",
-    "main.js.map": "/palm_app/static/js/main.0b989ea7.chunk.js.map",
+    "main.js": "/palm_app/static/js/main.64c64c84.chunk.js",
+    "main.js.map": "/palm_app/static/js/main.64c64c84.chunk.js.map",
     "runtime-main.js": "/palm_app/static/js/runtime-main.c679985b.js",
     "runtime-main.js.map": "/palm_app/static/js/runtime-main.c679985b.js.map",
     "static/js/2.5b18a141.chunk.js": "/palm_app/static/js/2.5b18a141.chunk.js",
     "static/js/2.5b18a141.chunk.js.map": "/palm_app/static/js/2.5b18a141.chunk.js.map",
     "index.html": "/palm_app/index.html",
-    "precache-manifest.733ab923dfaf3d909663db0948ada4a0.js": "/palm_app/precache-manifest.733ab923dfaf3d909663db0948ada4a0.js",
+    "precache-manifest.d92c7b10008df5895035edf0f1f79162.js": "/palm_app/precache-manifest.d92c7b10008df5895035edf0f1f79162.js",
     "service-worker.js": "/palm_app/service-worker.js",
     "static/css/main.c3039054.chunk.css.map": "/palm_app/static/css/main.c3039054.chunk.css.map",
     "static/js/2.5b18a141.chunk.js.LICENSE.txt": "/palm_app/static/js/2.5b18a141.chunk.js.LICENSE.txt",
@@ -41,6 +41,6 @@
     "static/js/runtime-main.c679985b.js",
     "static/js/2.5b18a141.chunk.js",
     "static/css/main.c3039054.chunk.css",
-    "static/js/main.0b989ea7.chunk.js"
+    "static/js/main.64c64c84.chunk.js"
   ]
 }
